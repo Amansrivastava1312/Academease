@@ -1,6 +1,5 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import Accordion from "./component/upload/Accordion";
 import "./App.css";
 import Upload from "./component/upload/Upload";
 
@@ -10,7 +9,11 @@ function App() {
   return (
     <>
       <Upload />
+      <div className="App">
+      <Accordion/>
+      </div>
     </>
+   
   );
 }
 
