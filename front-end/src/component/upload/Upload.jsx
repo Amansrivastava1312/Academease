@@ -1,6 +1,16 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import {
+  Card,
+  Button,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  CardText,
+  CardTitle,
+} from "reactstrap";
+import { FaUserGraduate } from "react-icons/fa";
 import "./Upload.css";
 const Upload = () => {
   const [title, setTitle] = useState();
@@ -73,6 +83,46 @@ const Upload = () => {
             : allImage.map((data) => {
                 return (
                   <div className="inner-div">
+                    <Card
+                      className="my-2"
+                      style={{
+                        width: "18rem",
+                        border: "2px solid #1eb2a6",
+                      }}
+                    >
+                      <CardHeader
+                        style={{
+                          width: "18rem",
+                          border: "2px solid #1eb2a6",
+                          borderLeft: "none",
+                          borderTop: "none",
+                          borderRight: "none",
+                        }}
+                      >
+                        Header
+                      </CardHeader>
+                      <CardBody>
+                        <CardTitle tag="h5">Special Title Treatment</CardTitle>
+                        <CardText>
+                          <FaUserGraduate />
+                        </CardText>
+                        <Button
+                          style={{
+                            display: "flex",
+                            marginTop: "35px",
+                            border: "2px solid #1eb2a6",
+                            backgroundColor: "transparent",
+                            color: "black",
+                            paddingRight: "100px",
+                            marginLeft: "10px",
+                            marginRight: "10px",
+                          }}
+                        >
+                          Go somewhere
+                        </Button>
+                      </CardBody>
+                      <CardFooter>Footer</CardFooter>
+                    </Card>
                     <h6>Title: {data.title}</h6>
                     <button
                       className="btn btn-primary"
