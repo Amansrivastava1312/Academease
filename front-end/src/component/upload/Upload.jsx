@@ -121,7 +121,7 @@ const Upload = () => {
                           Go somewhere
                         </Button>
                       </CardBody>
-                      <CardFooter>Footer</CardFooter>
+                      {/* <CardFooter>Footer</CardFooter> */}
                     </Card>
                     <h6>Title: {data.title}</h6>
                     <button
