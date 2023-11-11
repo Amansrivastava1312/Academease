@@ -1,11 +1,10 @@
 import { useState } from "react";
 
-//import Accordion from "./component/faq/Accordion";
 import "./App.css";
-import Accordion from "./component/faq/Accordion";
 import Upload from "./component/upload/Upload";
 import { Route, Routes } from "react-router-dom";
 import Faq from "./component/faq/Faq";
+import Home from "./component/home/Home";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,7 +13,7 @@ function App() {
     <>
       <Routes>
         <Route path="/upload" element={<Upload />} />
-        <Route path="/" element={<Faq />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </>
   );
