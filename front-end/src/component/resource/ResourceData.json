@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "image": "/public/dip (1).pdf",
+    "title": "Lab record",
+    "link": "/public/dip (1).pdf"
+  },
+
+  {
+    "id": 3,
+    "image": "/public/JavaScript-Handwritten-Notes.pdf",
+    "title": "Java Script",
+    "link": "/public/JavaScript-Handwritten-Notes.pdf"
+  },
+  {
+    "id": 4,
+    "image": "/public/ DBMS Notes.pdf",
+    "title": "DBMS",
+    "link": "/public/ DBMS Notes.pdf"
+  },
+  {
+    "id": 5,
+    "image": "/public/SQL Notes.pdf",
+    "title": "SQL ",
+    "link": "/public/SQL Notes.pdf"
+  }
+]

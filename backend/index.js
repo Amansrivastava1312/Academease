@@ -43,10 +43,11 @@ app.post("/upload-files", upload.single("file"), async (req, res) => {
   console.log(req.file);
   //   res.send("hii");
   const title = req.body.title;
+  const author = req.body.author;
   const fileName = req.file.filename;
 
   try {
-    await PdfSchema.create({ title: title, pdf: fileName });
+    await PdfSchema.create({ title: title, pdf: fileName, author: author });
     res.send({ status: "ok" });
   } catch (error) {
     res.json({ status: error });
