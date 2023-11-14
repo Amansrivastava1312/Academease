@@ -2,15 +2,24 @@ const User = require("../model/user")
 const {setUser} = require("../services/auth");
 
 const createUser = async (req, res) => {
-    const { fullname, email, roll, password } = req.body;
+    const { name, email, roll, password } = req.body;
+
+    const existingUser = await User.findOne({ email });
+    if (existingUser) {
+        return res.status(400).send({
+            success: false,
+            message:"User Already Exist"
+        })
+    }
     const user = await User.create({
-        fullname,
+        name,
         email,
         roll,
         password,
     })
-    return res.status(200).json({
+    return res.status(200).send({
         success: true,
+        message:"User Successfully Created",
         user,
     })
 }
@@ -37,8 +46,11 @@ const handleUserLogin = async (req, res) => {
     const token = setUser(user);
     res.cookie("uid", token);
 
-    return res.status(200).json({
+    return res.status(200).send({
         success: true,
+        message:"User Successfully login",
+        user,
+        token,
     })
 }
 

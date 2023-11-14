@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const { randomBytes, createHash } = require("crypto");
 
 const UserSchema = mongoose.Schema({
-    fullname: {
+    name: {
         type: String,
         required: [true, "Please Enter the Full Name"]
     },

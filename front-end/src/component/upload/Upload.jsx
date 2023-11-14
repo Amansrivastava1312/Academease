@@ -13,6 +13,8 @@ import {
 import { FaUserGraduate } from "react-icons/fa";
 import { AiOutlineStar } from "react-icons/ai";
 import "./Upload.css";
+import Footer from "../Footer/Footer";
+import Layout from "../Layout/Layout";
 const Upload = () => {
   const [title, setTitle] = useState();
   const [author, setAuthor] = useState();
@@ -31,7 +33,7 @@ const Upload = () => {
     // setPdfFile(`http://localhost:8080/files/${pdf}`);
   };
   const submitImage = async (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     const formData = new FormData();
     formData.append("title", title);
     formData.append("author", author);
@@ -66,12 +68,13 @@ const Upload = () => {
     cursor: "pointer",
   };
   return (
-    <div className="App">
-      <div className="upload-top">
+    <Layout>
+    <div className="App" style={{ background: "#eeeeee", padding: "0px" }}>
+      <div className="upload-top" style={{ width: "100%", padding: "0px" }}>
         <div className="image-section">
           <img
             style={{ width: "50%" }}
-            src="../../../public/cloud-upload-a30f385a928e44e199a62210d578375a.jpg"
+            src="/public/u-removebg-preview.png"
             alt=""
           />
           <h3>Upload Your Notes in PDF Format only..</h3>
@@ -110,7 +113,7 @@ const Upload = () => {
       </div>
       <div
         className="uploaded"
-        style={{ background: "#d8f0ee", marginTop: "30px" }}
+        style={{ background: "#eeeeee", marginTop: "30px" }}
       >
         <h1>Check Out Notes of Other Student</h1>
         <div className="output-div">
@@ -172,7 +175,9 @@ const Upload = () => {
               })}
         </div>
       </div>
-    </div>
+      <Footer style={{ width: "100%" }} />
+      </div>
+      </Layout>
   );
 };
 
