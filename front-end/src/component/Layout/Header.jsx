@@ -16,9 +16,17 @@ const Header = () => {
     toast.success("Logout Successfully");
   };
   return (
-    <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
+    <div
+    // className="mb-4"
+    // style={{
+    //   position: "fixed",
+    //   top: "0",
+    //   // zIndex: "999",
+    //   width: "100%",
+    // }}
+    >
+      <nav className="navbar navbar-expand-lg bg-body-tertiary mb-6">
+        <div className="container-fluid" style={{ background: "" }}>
           <button
             className="navbar-toggler"
             type="button"
@@ -79,8 +87,8 @@ const Header = () => {
               ) : (
                 <>
                   <li className="nav-item">
-                      <NavLink
-                        onClick={handleLogout}
+                    <NavLink
+                      onClick={handleLogout}
                       to={"/login"}
                       className="nav-link "
                       aria-current="page"
@@ -94,7 +102,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 
