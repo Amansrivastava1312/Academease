@@ -17,7 +17,7 @@ const createUser = async (req, res) => {
         roll,
         password,
     })
-    return res.status(200).json({
+    return res.status(200).send({
         success: true,
         message:"User Successfully Created",
         user,
@@ -46,8 +46,11 @@ const handleUserLogin = async (req, res) => {
     const token = setUser(user);
     res.cookie("uid", token);
 
-    return res.status(200).json({
+    return res.status(200).send({
         success: true,
+        message:"User Successfully login",
+        user,
+        token,
     })
 }
 
