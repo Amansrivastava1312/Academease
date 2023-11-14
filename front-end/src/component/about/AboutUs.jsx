@@ -1,9 +1,10 @@
 import React from 'react';
 import './AboutUs.css';
+import Layout from '../Layout/Layout';
 
 const AboutUs = () => {
   return (
-    <>
+    <Layout>
       <div className='about'>
       <div className='teacher'>
         <img src='https://www.oxfordlearning.com/wp-content/uploads/2020/04/GettyImages-1035393946-scaled.jpg'></img>
@@ -18,7 +19,7 @@ const AboutUs = () => {
  </div>
 </div>
       </div>
-    </>
+    </Layout>
   )
   // ... rest of the component code
 };

@@ -1,10 +1,10 @@
 import React from "react";
-import Footer from "../Footer/Footer";
+import Layout from "../Layout/Layout";
 const Home = () => {
   return (
-    <>
-      <Footer />
-    </>
+    <Layout>
+      <h1>Home Page</h1>
+    </Layout>
   );
 };
 

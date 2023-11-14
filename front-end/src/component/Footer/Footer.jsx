@@ -1,9 +1,10 @@
 import React from "react";
 import "./Footer.css";
+import Layout from "../Layout/Layout";
 
 const Footer = () => {
   return (
-    <div>
+    <>
       <footer>
         <div
           className="container padding"
@@ -104,7 +105,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-    </div>
+    </>
   );
 
   // ... rest of the component code

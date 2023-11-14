@@ -14,6 +14,7 @@ import { FaUserGraduate } from "react-icons/fa";
 import { AiOutlineStar } from "react-icons/ai";
 import "./Upload.css";
 import Footer from "../Footer/Footer";
+import Layout from "../Layout/Layout";
 const Upload = () => {
   const [title, setTitle] = useState();
   const [author, setAuthor] = useState();
@@ -32,7 +33,7 @@ const Upload = () => {
     // setPdfFile(`http://localhost:8080/files/${pdf}`);
   };
   const submitImage = async (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     const formData = new FormData();
     formData.append("title", title);
     formData.append("author", author);
@@ -67,6 +68,7 @@ const Upload = () => {
     cursor: "pointer",
   };
   return (
+    <Layout>
     <div className="App" style={{ background: "#eeeeee", padding: "0px" }}>
       <div className="upload-top" style={{ width: "100%", padding: "0px" }}>
         <div className="image-section">
@@ -174,7 +176,8 @@ const Upload = () => {
         </div>
       </div>
       <Footer style={{ width: "100%" }} />
-    </div>
+      </div>
+      </Layout>
   );
 };
 
