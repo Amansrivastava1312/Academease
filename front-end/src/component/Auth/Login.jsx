@@ -3,7 +3,11 @@ import Layout from "../Layout/Layout";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/Auth";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
+import "./Login.css";
+import { FaLock, FaUser } from "react-icons/fa";
+import Header from "../Layout/Header";
+import { RiLockPasswordFill } from "react-icons/ri";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -19,64 +23,77 @@ const Login = () => {
       // console.log(res.data.token);
       if (res.data.success) {
         toast.success(res.data.message);
-        alert(res.data.message)
+        alert(res.data.message);
         setAuth({
           ...auth,
-          user:res.data.user,
-          token:res.data.token,
-        })
+          user: res.data.user,
+          token: res.data.token,
+        });
         localStorage.setItem("auth", JSON.stringify(res.data));
         navigate("/");
       } else {
         toast.error(res.data.message);
-        alert(res.data.message)
+        alert(res.data.message);
       }
     } catch (error) {
       console.log(error);
       toast.error(error);
-      alert(res.data.message)
+      alert(res.data.message);
     }
   };
   return (
-    <Layout>
-      <div className="register">
-        <h1>Login Page</h1>
-
-        <form onSubmit={handleSubmit}>
-          
-          <div className="mb-3">
-            <label htmlFor="exampleInputEmail1" className="form-label">
-              Email address
-            </label>
-            <input
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              type="email"
-              className="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
-          </div>
-          
-          <div className="mb-3">
-            <label htmlFor="exampleInputPassword1" className="form-label">
-              Password
-            </label>
-            <input
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              type="password"
-              className="form-control"
-              id="exampleInputPassword1"
-            />
-          </div>
-
-          <button type="submit" className="btn btn-primary">
-            Submit
-          </button>
-        </form>
+    <div>
+      <Header />
+      <div className="body">
+        <div className="wrapper">
+          <form onSubmit={handleSubmit}>
+            <h1>Login</h1>
+            <div className="input-box">
+              <input
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                type="email"
+                // className="form-control"
+                // id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                required
+              />
+              <h6>
+                <FaUser />
+              </h6>
+            </div>
+            <div className="input-box">
+              <input
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                type="password"
+                // className="form-control"
+                // id="exampleInputPassword1"
+                required
+              />
+              <h6>
+                <RiLockPasswordFill />
+              </h6>
+            </div>
+            <div className="remember-forgot">
+              <label>
+                <input type="checkbox" />
+                Remember Me
+              </label>
+              <a href="#">Forgot Password</a>
+            </div>
+            <button type="submit" className="btn">
+              Login
+            </button>
+            <div className="register-link">
+              <p>
+                Dont have an account? <a href="#">Register</a>
+              </p>
+            </div>
+          </form>
+        </div>
       </div>
-    </Layout>
+    </div>
   );
 };
 

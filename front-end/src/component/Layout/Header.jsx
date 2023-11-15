@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { useAuth } from "../context/Auth";
 import { toast } from "react-toastify";
-
+import "./Head.css";
 const Header = () => {
   const [auth, setAuth] = useAuth();
 
@@ -17,15 +17,27 @@ const Header = () => {
   };
   return (
     <div
-    // className="mb-4"
-    // style={{
-    //   position: "fixed",
-    //   top: "0",
-    //   // zIndex: "999",
-    //   width: "100%",
-    // }}
+      className="mb-4"
+      style={{
+        position: "fixed",
+        top: "0",
+        // zIndex: "999",
+        marginTop: "10px",
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
     >
-      <nav className="navbar navbar-expand-lg bg-body-tertiary mb-6">
+      <nav
+        className=" navbar navbar-expand-lg"
+        style={{
+          width: "95%",
+          borderRadius: "100px",
+          // background: "white",
+          // backdropFilter: blur(1000px),
+        }}
+      >
         <div className="container-fluid" style={{ background: "" }}>
           <button
             className="navbar-toggler"

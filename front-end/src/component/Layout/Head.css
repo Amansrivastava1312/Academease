@@ -1,0 +1,12 @@
+.navbar {
+  backdrop-filter: blur(1000px);
+}
+.nav-link {
+  /* padding: 100px; */
+  border-radius: 10%;
+  margin-left: 20px;
+}
+.nav-link:hover {
+  background-color: rgb(209, 204, 204);
+  color: black;
+}

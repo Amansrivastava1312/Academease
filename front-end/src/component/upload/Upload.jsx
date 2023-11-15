@@ -69,115 +69,111 @@ const Upload = () => {
   };
   return (
     <Layout>
-    <div className="App" style={{ background: "#eeeeee", padding: "0px" }}>
-      <div className="upload-top" style={{ width: "100%", padding: "0px" }}>
-        <div className="image-section">
-          <img
-            style={{ width: "50%" }}
-            src="/public/u-removebg-preview.png"
-            alt=""
-          />
-          <h3>Upload Your Notes in PDF Format only..</h3>
-        </div>
-        <form action="" className="formStyle" onSubmit={submitImage}>
-          <h4>Upload Pdf</h4>
+      <div className="App" style={{ background: "#eeeeee", padding: "0px" }}>
+        <div className="upload-top" style={{ width: "100%", padding: "0px" }}>
+          <div className="image-section">
+            <img style={{ width: "50%" }} src="/images/upload.png" alt="" />
+            <h3>Upload Your Notes in PDF Format only..</h3>
+          </div>
+          <form action="" className="formStyle" onSubmit={submitImage}>
+            <h4>Upload Pdf</h4>
 
-          <input
-            type="text"
-            className="form-control"
-            placeholder="Enter Notes Subject"
-            onChange={(e) => setTitle(e.target.value)}
-            required
-          />
-          <br />
-          <input
-            type="text"
-            className="form-control"
-            placeholder="Enter Your Name"
-            onChange={(e) => setAuthor(e.target.value)}
-            required
-          />
-          <br />
-          <input
-            type="file"
-            className="form-control"
-            accept="application/pdf"
-            onChange={(e) => setFile(e.target.files[0])}
-            required
-          />
-          <br />
-          <button type="submit" className="btn btn-primary">
-            Submit
-          </button>
-        </form>
-      </div>
-      <div
-        className="uploaded"
-        style={{ background: "#eeeeee", marginTop: "30px" }}
-      >
-        <h1>Check Out Notes of Other Student</h1>
-        <div className="output-div">
-          {allImage == null
-            ? ""
-            : allImage.map((data) => {
-                return (
-                  <div className="inner-div">
-                    <Card
-                      className="my-2"
-                      style={{
-                        border: "1px solid black",
-                        width: "16rem",
-                        height: "15rem",
-                      }}
-                    >
-                      <CardHeader
-                        style={{
-                          height: "30%",
-                          border: "transparent",
-                          background: "white",
-                        }}
-                      >
-                        <h4>{data.title}</h4>
-                      </CardHeader>
-                      <CardBody style={{ height: "60%" }}>
-                        <CardTitle tag="h5">{FaUserGraduate}</CardTitle>
-                        <CardText
-                          style={{ color: "black", fontWeight: "bold" }}
-                        >
-                          Notes By :-{data.author}
-                        </CardText>
-                        <Button
-                          style={{
-                            padding: "5px 50px",
-                            marginTop: "12px",
-                            backgroundColor: "#1eb2a6",
-                          }}
-                          className="btn btn-primary"
-                          onClick={() => showPdf(data.pdf)}
-                        >
-                          View Notes
-                        </Button>
-                      </CardBody>
-                      <CardFooter
-                        style={{
-                          height: "10%",
-                          padding: "10px 0px",
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                        }}
-                      >
-                        Study With Academease
-                      </CardFooter>
-                    </Card>
-                  </div>
-                );
-              })}
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Enter Notes Subject"
+              onChange={(e) => setTitle(e.target.value)}
+              required
+            />
+            <br />
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Enter Your Name"
+              onChange={(e) => setAuthor(e.target.value)}
+              required
+            />
+            <br />
+            <input
+              type="file"
+              className="form-control"
+              accept="application/pdf"
+              onChange={(e) => setFile(e.target.files[0])}
+              required
+            />
+            <br />
+            <button type="submit" className="btn btn-primary">
+              Submit
+            </button>
+          </form>
         </div>
+        <div
+          className="uploaded"
+          style={{ background: "#eeeeee", marginTop: "30px" }}
+        >
+          <h1>Check Out Notes of Other Student</h1>
+          <div className="output-div">
+            {allImage == null
+              ? ""
+              : allImage.map((data) => {
+                  return (
+                    <div className="inner-div">
+                      <Card
+                        className="my-2"
+                        style={{
+                          border: "1px solid black",
+                          width: "16rem",
+                          height: "15rem",
+                        }}
+                      >
+                        <CardHeader
+                          style={{
+                            height: "30%",
+                            border: "transparent",
+                            background: "white",
+                          }}
+                        >
+                          <h4>{data.title}</h4>
+                        </CardHeader>
+                        <CardBody style={{ height: "60%" }}>
+                          <CardTitle tag="h5">{FaUserGraduate}</CardTitle>
+                          <CardText
+                            style={{ color: "black", fontWeight: "bold" }}
+                          >
+                            Notes By :-{data.author}
+                          </CardText>
+                          <Button
+                            style={{
+                              padding: "5px 50px",
+                              marginTop: "12px",
+                              backgroundColor: "#1eb2a6",
+                            }}
+                            className="btn btn-primary"
+                            onClick={() => showPdf(data.pdf)}
+                          >
+                            View Notes
+                          </Button>
+                        </CardBody>
+                        <CardFooter
+                          style={{
+                            height: "10%",
+                            padding: "10px 0px",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                          }}
+                        >
+                          Study With Academease
+                        </CardFooter>
+                      </Card>
+                    </div>
+                  );
+                })}
+          </div>
+        </div>
+        <Footer style={{ width: "100%" }} />
       </div>
-      <Footer style={{ width: "100%" }} />
-      </div>
-      </Layout>
+    </Layout>
   );
 };
 
