@@ -9,13 +9,16 @@ import AboutUs from "./component/about/AboutUs";
 import Notes from "./component/Notes";
 import PageNotFound from "./component/Pagenotfound";
 import Faq from "./component/faq/Faq";
+import PrivateRoute from "./component/Routes/Private";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/upload" element={<Upload />} />
+        <Route path="/upload" element={<PrivateRoute />}>
+          <Route path="" element={<Upload />} />
+        </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/about" element={<AboutUs />} />
