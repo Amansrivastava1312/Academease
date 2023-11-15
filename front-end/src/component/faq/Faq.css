@@ -10,7 +10,7 @@
 }
 .faq .box {
   /* background-color: #fff; */
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .faq button {
   padding: 0;
@@ -18,13 +18,17 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 15px 20px;
+  padding: 9px 13px;
 }
 .faq h2 {
   font-weight: 500;
 }
 .faq p {
-  padding: 20px;
+  /* padding: 20px; */
+}
+.faq .accordion {
+  border: none;
+  border-radius: 10px;
 }
 .faq .accordion:hover {
   background-color: #1eb2a6;

@@ -25,9 +25,13 @@ const Faq = () => {
               <h6>{val.title}</h6>
               <span>
                 {click === index ? (
-                  <i>{AiFillCaretDown}</i>
+                  <p>
+                    <AiFillCaretDown />
+                  </p>
                 ) : (
-                  <i className="fa fa-chevron-right"></i>
+                  <p>
+                    <AiFillCaretDown />
+                  </p>
                 )}
               </span>
             </button>
