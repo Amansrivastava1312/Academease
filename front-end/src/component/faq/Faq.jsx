@@ -13,8 +13,20 @@ const Faq = () => {
     setClick(index);
   };
   return (
-    <section className="faq">
-      <div className="container">
+    <section
+      className="faq"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        gap: "10px",
+        backgroundColor: "#ebfaf5",
+        padding: "50px",
+      }}
+    >
+      <h2>Frequently Asked Q's</h2>
+      <div className="container" style={{ backgroundColor: "#ebfaf5" }}>
         {faq.map((val, index) => (
           <div className="box">
             <button
