@@ -1,11 +1,17 @@
 import React from 'react';
 import './AboutUs.css';
+import Header from '../Layout/Header';
+import Footer from '../Footer/Footer';
+import Team from '../Team/Team';
+// import Background from '../'
+import Layout from '../Layout/Layout';
 
 const AboutUs = () => {
   return (
     <>
-      
-      <div className="about-container">
+     <Layout>
+        <Team />
+        <div className="about-container">
       <div className="about-image">
         <img src="https://www.bing.com/th?id=OIP.jEeunVRW28s2uBZlXjKQHAHaEt&w=143&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Academmease Image" />
       </div>
@@ -26,7 +32,7 @@ const AboutUs = () => {
       </div>
       
     </div>
-    
+    </Layout>
     
     </>
   )

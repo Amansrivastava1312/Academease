@@ -29,21 +29,25 @@ const Layout = ({ children }) => {
         >
           Help,Your Friends <br /> by providing notes.{" "}
         </h1>
-        <NavLink to={"./upload"}>
-          <button
-            style={{
-              
-              position: "relative",
-              marginLeft: "30vh",
-              marginTop :"5px",
-              // paddingTop:"50vh"
-              padding: "20px",
-              borderRadius: "20px",
-            }}
-          >
-            Upload Here
-          </button>
-        </NavLink>
+        <Link to="/upload" style={{ textDecoration: 'none' }}>
+      <button
+        style={{
+          position: "relative",
+          marginLeft: "30vh",
+          marginTop: "5px",
+          padding: "20px",
+          borderRadius: "20px",
+          backgroundColor: "transparent",
+          color: "#000",  // Text color
+          border: "2px solid #007BFF",  // Border color
+          transition: "background-color 0.3s",  // Transition for smooth effect
+        }}
+        onMouseOver={(e) => e.target.style.backgroundColor = "#20c997"}
+        onMouseOut={(e) => e.target.style.backgroundColor = "transparent"}
+      >
+        Upload Here
+      </button>
+    </Link>
       </div>
 
       <main style={{ minHeight: "80vh" }}>
