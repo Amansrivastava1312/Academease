@@ -5,11 +5,24 @@ import Layout from "../Layout/Layout";
 const Footer = () => {
   return (
     <>
+      <section id="newsletter" className="section-p1 section-m1">
+        <div className="newstext">
+          <h4>Sign Up For NewsLetters</h4>
+          <p>
+            Get E-mail updates about our Courses and <span>special offer.</span>
+          </p>
+        </div>
+        <div className="form">
+          <input type="text" placeholder="Your email address" />
+          <button className="normal">Sign Up</button>
+        </div>
+      </section>
+
       <footer>
         <div
           className="container padding"
           style={{
-            margin: "0px",
+            paddingTop: "40px",
             padding: "0px",
             justifyContent: "space-between",
           }}

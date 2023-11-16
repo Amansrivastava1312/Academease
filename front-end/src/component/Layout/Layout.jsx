@@ -8,11 +8,11 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <div style={{ width: "100%" }}>
+      <div style={{ width: "100%", height: "140vh" }}>
         <img
           src="./../../../public/images/bg.webp"
           alt=""
-          style={{ width: "100%" }}
+          style={{ width: "100%", height: "60%" }}
         />
       </div>
 
@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
         <ToastContainer />
         {children}
       </main>
-      <Footer />
+      <Footer style={{ width: "100%" }} />
     </>
   );
 };

@@ -3,6 +3,10 @@ body {
 }
 .templateContainer {
   margin: 5% 0;
+  /* background-image: url("./../../../public/images/bg.webp"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* width: 100%; */
 }
 .templateContainer > .searchInput_Container {
   width: 100%;

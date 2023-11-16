@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import data from "./ResourceData.json";
 import "./Resource.css";
 import Header from "./../Layout/Header";
+import Footer from "../Footer/Footer";
 const Resource = () => {
   const [searchTerm, setSearchTerm] = useState("");
   return (
@@ -176,6 +177,7 @@ const Resource = () => {
             })}
         </div>
       </div>
+      <Footer />
     </>
   );
 };
