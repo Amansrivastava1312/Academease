@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import Layout from "../Layout/Layout";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 import axios from "axios";
+import { FaLock, FaUser } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-
+import Header from "../Layout/Header";
+import { MdEmail } from "react-icons/md";
+import { AiOutlineNumber } from "react-icons/ai";
+import { RiLockPasswordFill } from "react-icons/ri";
+import "./Login.css";
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -22,8 +27,8 @@ const Register = () => {
       });
       if (res.data.success) {
         toast.success(res.data.message);
-        alert("User registered")
-          navigate("/login");
+        alert("User registered");
+        navigate("/login");
       } else {
         toast.error(res.data.message);
       }
@@ -34,67 +39,90 @@ const Register = () => {
   };
 
   return (
-    <Layout>
-      <div className="register">
-        <h1>Register Page</h1>
+    <>
+      <Header />
+      <div className="body" style={{ paddingTop: "70px" }}>
+        <div className="wrapper">
+          <form onSubmit={handleSubmit}>
+            <h1>Register</h1>
+            <div className="input-box">
+              <input
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                type="text"
+                placeholder="Enter Your Name"
+                // className="form-control"
+                // id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                required
+              />
+              <h6>
+                <FaUser />
+              </h6>
+            </div>
+            <div className="input-box">
+              <input
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                type="email"
+                placeholder="Enter Your Email"
+                aria-describedby="emailHelp"
+                // className="form-control"
+                // id="exampleInputPassword1"
+                required
+              />
+              <h6>
+                <MdEmail />
+              </h6>
+            </div>
+            <div className="input-box">
+              <input
+                value={roll}
+                onChange={(e) => setRoll(e.target.value)}
+                type="Number"
+                placeholder="Enter Roll Number"
+                // className="form-control"
+                // id="exampleInputPassword1"
+                required
+              />
+              <h6>
+                <AiOutlineNumber />
+              </h6>
+            </div>
+            <div className="input-box">
+              <input
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                type="password"
+                placeholder="Enter password"
+                // className="form-control"
+                // id="exampleInputPassword1"
+                required
+              />
+              <h6>
+                <RiLockPasswordFill />
+              </h6>
+            </div>
 
-        <form onSubmit={handleSubmit}>
-          <div className="mb-3">
-            <label htmlFor="exampleInputName" className="form-label">
-              Full Name
-            </label>
-            <input
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              type="text"
-              className="form-control"
-              id="exampleInputName"
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="exampleInputEmail1" className="form-label">
-              Email address
-            </label>
-            <input
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              type="email"
-              className="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="exampleInputRoll" className="form-label">
-              University Roll No.
-            </label>
-            <input
-              value={roll}
-              onChange={(e) => setRoll(e.target.value)}
-              type="Number"
-              className="form-control"
-              id="exampleInputRoll"
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="exampleInputPassword1" className="form-label">
-              Password
-            </label>
-            <input
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              type="password"
-              className="form-control"
-              id="exampleInputPassword1"
-            />
-          </div>
-
-          <button type="submit" className="btn btn-primary">
-            Submit
-          </button>
-        </form>
+            <div className="remember-forgot">
+              <label>
+                <input type="checkbox" />
+                Remember Me
+              </label>
+              <a href="#">Forgot Password</a>
+            </div>
+            <button type="submit" className="btn">
+              Register
+            </button>
+            <div className="register-link">
+              <p>
+                have an account? <a href="#">Login</a>
+              </p>
+            </div>
+          </form>
+        </div>
       </div>
-    </Layout>
+    </>
   );
 };
 
