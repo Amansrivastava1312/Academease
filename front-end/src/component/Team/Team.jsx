@@ -1,5 +1,5 @@
 import React from "react";
-import { FaRocket,FaInstagram,FaGithub } from "react-icons/fa";
+import { FaRocket, FaInstagram, FaGithub } from "react-icons/fa";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import { FaFacebookF } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
@@ -19,30 +19,42 @@ const Team = () => {
           <div className="box-t">
             <div className="top-bar-t" />
             <div className="nav-t">
-              <h6>
+              <i>
                 <IoIosCheckmarkCircle />
-              </h6>
+              </i>
               <input type="checkbox" className="heart-btn" id="heart-btn" />
-              <CiHeart />
-              
+              <i>
+                <CiHeart />
+              </i>
             </div>
             <div className="details">
-              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt />
+              <img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                alt
+              />
               <strong>Emma Olivia</strong>
               <p>Emmaolivia@gmail.com</p>
             </div>
             <div className="btn">
               <a href="#">
-                <FaFacebookF />
+                <i>
+                  <FaFacebookF />
+                </i>
               </a>
               <a href="#">
-                <FaGithub />
+                <i>
+                  <FaGithub />
+                </i>
               </a>
               <a href="#">
-                <FaInstagram />
+                <i>
+                  <FaInstagram />
+                </i>
               </a>
               <a href="#">
-                <SiLeetcode />
+                <i>
+                  <SiLeetcode />
+                </i>
               </a>
             </div>
           </div>
@@ -55,22 +67,33 @@ const Team = () => {
               <CiHeart />
             </div>
             <div className="details">
-              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt />
+              <img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                alt
+              />
               <strong>Sofia Adward</strong>
               <p>Sofiaadward@gmail.com</p>
             </div>
             <div className="btn">
               <a href="#">
-                <FaFacebookF />
+                <i>
+                  <FaFacebookF />
+                </i>
               </a>
               <a href="#">
-                <FaGithub />
+                <i>
+                  <FaGithub />
+                </i>
               </a>
               <a href="#">
-                <FaInstagram />
+                <i>
+                  <FaInstagram />
+                </i>
               </a>
               <a href="#">
-                <SiLeetcode />
+                <i>
+                  <SiLeetcode />
+                </i>
               </a>
             </div>
           </div>
@@ -83,50 +106,75 @@ const Team = () => {
               <CiHeart />
             </div>
             <div className="details">
-              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt />
+              <img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                alt
+              />
               <strong>Touseeq Ijaz</strong>
               <p>Touseeqijaz@gmail.com</p>
             </div>
             <div className="btn">
               <a href="#">
-                <FaFacebookF />
+                <i>
+                  <FaFacebookF />
+                </i>
               </a>
               <a href="#">
-                <FaGithub />
+                <i>
+                  <FaGithub />
+                </i>
               </a>
               <a href="#">
-                <FaInstagram />
+                <i>
+                  <FaInstagram />
+                </i>
               </a>
               <a href="#">
-                <SiLeetcode />
+                <i>
+                  <SiLeetcode />
+                </i>
               </a>
             </div>
           </div>
           <div className="box-t">
             <div className="top-bar-t" />
             <div className="nav-t">
-              <IoIosCheckmarkCircle />
-
+              <i>
+                <IoIosCheckmarkCircle />
+              </i>
               <input type="checkbox" className="heart-btn" id="heart-btn" />
-              <CiHeart />
+              <i>
+                <CiHeart />
+              </i>
             </div>
             <div className="details">
-              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt />
+              <img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                alt
+              />
               <strong>Amelia Alex</strong>
               <p>Ameliaalex@gmail.com</p>
             </div>
             <div className="btn">
               <a href="#">
-                <FaFacebookF />
+                <i>
+                  <FaFacebookF />
+                </i>
               </a>
               <a href="#">
-                <FaGithub />
+                <i>
+                  <FaGithub />
+                </i>
               </a>
               <a href="#">
-                <FaInstagram />
+                <i>
+                  <FaInstagram />
+                </i>
               </a>
               <a href="#">
-                <SiLeetcode />
+                <i>
+                  <SiLeetcode />
+                </i>
               </a>
             </div>
           </div>
