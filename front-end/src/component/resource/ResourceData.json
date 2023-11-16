@@ -1,27 +1,38 @@
 [
   {
     "id": 1,
-    "image": "/public/dip (1).pdf",
+    "image": "https://drive.google.com/file/d/1pzPXiHAMUPuNWo_QU0KS2akV8zj0dXoX/view?usp=sharing",
     "title": "Lab record",
-    "link": "/public/dip (1).pdf"
+    "year": "third",
+    "link": "https://drive.google.com/drive/folders/1jz3R5ExDLQg19PhJuAdnBAHcj9g8wfQP"
   },
 
   {
-    "id": 3,
+    "id": 2,
     "image": "/public/JavaScript-Handwritten-Notes.pdf",
     "title": "Java Script",
+    "year": "thirdfirstsecondfourth",
     "link": "/public/JavaScript-Handwritten-Notes.pdf"
   },
   {
-    "id": 4,
+    "id": 3,
     "image": "/public/ DBMS Notes.pdf",
     "title": "DBMS",
+    "year": "third",
     "link": "/public/ DBMS Notes.pdf"
   },
   {
-    "id": 5,
+    "id": 4,
     "image": "/public/SQL Notes.pdf",
     "title": "SQL ",
+    "year": "second",
     "link": "/public/SQL Notes.pdf"
+  },
+  {
+    "id": 5,
+    "image": "/public/DSA.pdf",
+    "title": "DSA",
+    "year": "first",
+    "link": "/public/DSA.pdf"
   }
 ]
