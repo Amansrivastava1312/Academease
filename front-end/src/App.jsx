@@ -10,6 +10,7 @@ import Notes from "./component/Notes";
 import PageNotFound from "./component/Pagenotfound";
 import Faq from "./component/faq/Faq";
 import PrivateRoute from "./component/Routes/Private";
+import Popular from "./component/PlayList/Popular";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/faq" element={<Faq />} />
         <Route path="*" element={<PageNotFound />} />
         <Route path="/resourse" element={<Resource />} />
+        <Route path="/popular" element={<Popular />} />
       </Routes>
     </>
   );
