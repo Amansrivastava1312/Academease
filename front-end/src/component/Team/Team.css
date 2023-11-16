@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    background-color: #f8f8f8;
+    
 }
 
 *{
@@ -11,6 +11,10 @@ body{
 
 a{
     text-decoration: none;
+}
+
+.team-container{
+    background-color: rgb(244, 241, 241);
 }
 
 #team{
