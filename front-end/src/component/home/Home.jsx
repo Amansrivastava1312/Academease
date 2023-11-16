@@ -8,7 +8,6 @@ const Home = () => {
     <Layout>
       <h1>Home Page</h1>
       <Faq />
-      {/* <pre>{ JSON.stringify(auth,null,4)}</pre> */}
     </Layout>
   );
 };
