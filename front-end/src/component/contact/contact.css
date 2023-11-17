@@ -240,8 +240,13 @@
     max-height: 520px;
     width: 100%;
     height: 520px;
+
     background-color: #d9d9d9;
    /* background-image: url("https://www.bing.com/maps/geoplat/REST/v1/Imagery/Map/RoadVibrant/27.478704,77.668549/11?ms=648,345&heid=7411402116624809985,707070&fpp=27.47870445251465,77.66854858398438;178&ml=Basemap,LandCover,Landmarks,OsmBuildings&key=AnTcaqBi2ypp0xI-OZNi4W_ik2KhjgpqioTAtXLC8GzkMBQRMlyxvxyTnd5b73im&c=en-US&ur=in&fmt=png&od=1&shading=flat&logo=n&da=ro");*/
+
+    /* background-color: #d9d9d9; */
+    /* background-image: url("https://www.bing.com/maps/geoplat/REST/v1/Imagery/Map/RoadVibrant/27.478704,77.668549/11?ms=648,345&heid=7411402116624809985,707070&fpp=27.47870445251465,77.66854858398438;178&ml=Basemap,LandCover,Landmarks,OsmBuildings&key=AnTcaqBi2ypp0xI-OZNi4W_ik2KhjgpqioTAtXLC8GzkMBQRMlyxvxyTnd5b73im&c=en-US&ur=in&fmt=png&od=1&shading=flat&logo=n&da=ro"); */
+
     background-size: cover;
     background-position-x: 50%;
     background-position-y: 50%;
