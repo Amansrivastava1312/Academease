@@ -56,6 +56,7 @@ const Login = () => {
                 // className="form-control"
                 // id="exampleInputEmail1"
                 aria-describedby="emailHelp"
+                placeholder="Enter Your Email"
                 required
               />
               <h6>
@@ -69,25 +70,20 @@ const Login = () => {
                 type="password"
                 // className="form-control"
                 // id="exampleInputPassword1"
+                placeholder="Enter Your Password"
                 required
               />
               <h6>
                 <RiLockPasswordFill />
               </h6>
             </div>
-            <div className="remember-forgot">
-              <label>
-                <input type="checkbox" />
-                Remember Me
-              </label>
-              <a href="#">Forgot Password</a>
-            </div>
+            
             <button type="submit" className="btn">
               Login
             </button>
             <div className="register-link">
               <p>
-                Dont have an account? <a href="#">Register</a>
+                Dont have an account? <a href="/register">Register</a>
               </p>
             </div>
           </form>
