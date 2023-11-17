@@ -21,7 +21,7 @@ const Header = () => {
       style={{
         position: "fixed",
         top: "0",
-        // zIndex: "999",
+        zIndex: "999",
         marginTop: "10px",
         width: "100%",
         display: "flex",

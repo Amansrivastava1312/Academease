@@ -40,10 +40,16 @@ const Resource = () => {
                 // color: "#0e5c3a",
                 borderRadius: "10px",
               }}
+              onClick={() => {
+                setSearchTerm("first");
+              }}
             >
               First Year{" "}
             </button>
             <button
+              onClick={() => {
+                setSearchTerm("second");
+              }}
               style={{
                 textDecoration: "none",
                 border: "none",
@@ -57,6 +63,9 @@ const Resource = () => {
               Second Year{" "}
             </button>
             <button
+              onClick={() => {
+                setSearchTerm("third");
+              }}
               style={{
                 textDecoration: "none",
                 border: "none",
@@ -70,6 +79,9 @@ const Resource = () => {
               Third Year{" "}
             </button>
             <button
+              onClick={() => {
+                setSearchTerm("fourth");
+              }}
               style={{
                 textDecoration: "none",
                 border: "none",
@@ -101,6 +113,11 @@ const Resource = () => {
               } else if (
                 val.title.toLowerCase().includes(searchTerm.toLowerCase())
               ) {
+                // <h1>Aman</h1>;
+                return val;
+              }
+              if (val.year.toLowerCase().includes(searchTerm.toLowerCase())) {
+                // <h1>Aman</h1>;
                 return val;
               }
             })
@@ -135,6 +152,8 @@ const Resource = () => {
                   >
                     <iframe
                       src={val.image}
+                      allow="autoplay"
+                      title="pdf"
                       style={{
                         width: "100%",
                         height: "90%",
@@ -161,7 +180,7 @@ const Resource = () => {
                     <a
                       href={val.link}
                       target="_blank"
-                      download
+                      view
                       style={{
                         background: "#bbedd8",
                         padding: "5px 10px",
@@ -169,7 +188,7 @@ const Resource = () => {
                         borderRadius: "10px",
                       }}
                     >
-                      Download
+                      View Material
                     </a>
                   </div>
                 </div>
