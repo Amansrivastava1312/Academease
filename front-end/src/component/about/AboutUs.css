@@ -1,6 +1,11 @@
 
 
+
+
+
+
 .about-container {
+ 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -8,7 +13,9 @@
   padding: 20px;
   background-color:#d3d3d3;
  display: flex;
+ 
 }
+
 
 .about-content {
   padding-left: 35px;;
