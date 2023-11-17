@@ -12,14 +12,14 @@
     "image": "/public/JavaScript-Handwritten-Notes.pdf",
     "title": "Java Script",
     "year": "thirdfirstsecondfourth",
-    "link": "/public/JavaScript-Handwritten-Notes.pdf"
+    "link": "https://drive.google.com/drive/folders/1ZinYXfBziWdGxLUTSUQGhP8V-U7AEaWs"
   },
   {
     "id": 3,
     "image": "/public/ DBMS Notes.pdf",
     "title": "DBMS",
     "year": "third",
-    "link": "/public/ DBMS Notes.pdf"
+    "link": "https://drive.google.com/drive/folders/1qG0DrxB3DiCD2v2338tczEsyIkv1iABu"
   },
   {
     "id": 4,
@@ -32,7 +32,231 @@
     "id": 5,
     "image": "/public/DSA.pdf",
     "title": "DSA",
+    "year": "second",
+    "link": "https://drive.google.com/drive/folders/1jz3R5ExDLQg19PhJuAdnBAHcj9g8wfQP"
+  },
+  {
+    "id":6,
+    "image": "",
+    "title": "Automata",
+    "year": "third",
+    "link": "https://drive.google.com/drive/folders/1benwkaVfQzydtF22aHa2AKYAF3KQCSO4"
+  },
+  {
+    "id":7,
+    "image": "",
+    "title": "Cloud Computing",
+    "year": "third",
+    "link": "https://drive.google.com/drive/folders/1-MzkjpFf5m6xzEuNojwgZGOAbqMg12RE"
+  },
+  {
+    "id":8,
+    "image": "",
+    "title": "DAA",
+    "year": "third",
+    "link": "https://drive.google.com/drive/folders/1aFdgsK8DfUpJ4KprP6l-q9VL-NzLuNtP"
+  },
+  {
+    "id":9,
+    "image": "",
+    "title": "DIP",
+    "year": "third",
+    "link": "https://drive.google.com/drive/folders/1MPPR7iD4Q_fIW6kiMHzy82fsMew_P_tn"
+  },
+  {
+    "id":10,
+    "image": "",
+    "title": "Full Stack",
+    "year": "third",
+    "link": "https://drive.google.com/drive/folders/1ZinYXfBziWdGxLUTSUQGhP8V-U7AEaWs"
+  },
+  {
+    "id":11,
+    "image": "",
+    "title": "Machine Learning",
+    "year": "third",
+    "link": "https://drive.google.com/drive/folders/12xMXUh8_WRmrPJEE_UnyQEAQcTsQcgz_"
+  },
+  {
+    "id":12,
+    "image": "",
+    "title": "PYQ",
+    "year": "third",
+    "link": "https://drive.google.com/drive/folders/1xK5Xw1Kv_LDCTKd7IUOtLmx-sWcDKZZu"
+  },
+  {
+    "id":13,
+    "image": "",
+    "title": "Operating System",
+    "year": "second",
+    "link": "https://drive.google.com/drive/folders/1UO7W3Zho4GE3W0dTQgfNEoiwX1DMK3Rp"
+  },
+  {
+    "id":14,
+    "image": "",
+    "title": "Software Engineering",
+    "year": "second",
+    "link": "https://drive.google.com/drive/folders/1UO7W3Zho4GE3W0dTQgfNEoiwX1DMK3Rp"
+  },
+  {
+    "id":15,
+    "image": "",
+    "title": "Computer Networks",
+    "year": "second",
+    "link": "https://drive.google.com/drive/folders/1AIaRoNKnTEZr8WZ6htU2Tp_MrzXW1-Iu"
+  },
+  {
+    "id":16,
+    "image": "",
+    "title": "Computer Organization",
+    "year": "second",
+    "link": "https://drive.google.com/drive/folders/13jXgDNpDhfTSPqQ6TnpQES20W-U82RbZ"
+  },
+  {
+    "id":17,
+    "image": "",
+    "title": "Disaster Management",
+    "year": "second",
+    "link": "https://drive.google.com/drive/folders/1IdXRFp9lWKhgLipri_E1GG0YcYwT1GmF"
+  },
+  {
+    "id":18,
+    "image": "",
+    "title": "Engish 3rd sem",
+    "year": "second",
+    "link": "https://drive.google.com/drive/folders/1Ey0w5-_w3B6Vd1WQ61zsyua-7qNGUYBS"
+  },
+  {
+    "id":19,
+    "image": "",
+    "title": "English 4th sem",
+    "year": "second",
+    "link": "https://drive.google.com/drive/folders/1ZHK52qsQCEqSTYi95QhgeC_2iMYMbIiK"
+  },
+  {
+    "id":20,
+    "image": "",
+    "title": "Java",
+    "year": "second",
+    "link": "https://drive.google.com/drive/folders/1pa54jZ0ynYcOvBYB1K-F0c6xVnoA6Vdg"
+  },
+  {
+    "id":21,
+    "image": "",
+    "title": "Discreate Mathematics",
+    "year": "second",
+    "link": "https://drive.google.com/drive/folders/1HbOANVucW3hHRm945Mxj_POpgOAxTzGs"
+  },
+  {
+    "id":22,
+    "image": "Engineering Mathematics 3",
+    "title": "",
+    "year": "second",
+    "link": "https://drive.google.com/drive/folders/1hgVOOT5atP19RcFws8sJJWHJlSfczeST"
+  },
+  {
+    "id":23,
+    "image": "",
+    "title": "Microprocessor",
+    "year": "second",
+    "link": "https://drive.google.com/drive/folders/1fT3hcUsBQoudZs6VvITW3XiPqcqBo-NU"
+  },
+  {
+    "id":24,
+    "image": "",
+    "title": "Waste To Energy",
+    "year": "second",
+    "link": "https://drive.google.com/drive/folders/1_6dSvzim5v3NapavXU_6gydjK9NeqB2E"
+  },
+  {
+    "id":25,
+    "image": "",
+    "title": "Leadership and Organization",
+    "year": "second",
+    "link": "https://drive.google.com/drive/folders/1PpSN3k6rsfHhwGya_su0Bd2_QTU51fG8"
+  },
+  {
+    "id":26,
+    "image": "",
+    "title": "Environmental Economics",
+    "year": "second",
+    "link": "https://drive.google.com/drive/folders/1JPGN7zhA86YGrZCSY4OCyt2yse-eeSOv"
+  },
+  {
+    "id":27,
+    "image": "",
+    "title": "Mathematics 1",
     "year": "first",
-    "link": "/public/DSA.pdf"
+    "link": "https://drive.google.com/drive/folders/1aWpO1RIXwJpkiPQM2m0zshT9b3gBit2L"
+  },
+  {
+    "id":28,
+    "image": "",
+    "title": "Mathematics 2",
+    "year": "first",
+    "link": "https://drive.google.com/drive/folders/1ab2I75gb_liyf_47RLS-HpudEE1GVJ3u"
+  },
+  {
+    "id":29,
+    "image": "",
+    "title": "Python",
+    "year": "first",
+    "link": "https://drive.google.com/drive/folders/1aHJhjJdKdR4oWOLaaXM-9j6g4NOMo_ds"
+  },
+  {
+    "id":30,
+    "image": "",
+    "title": "C",
+    "year": "first",
+    "link": "https://drive.google.com/drive/folders/1aBU_C_Dg4B6p_1tg7AnliUyoLnqm88U0"
+  },
+  {
+    "id":31,
+    "image": "",
+    "title": "Chemistry",
+    "year": "first",
+    "link": "https://drive.google.com/drive/folders/1asx4CZZfiBmGQ6mlFlgYlIK6mUa_G6uR"
+  },
+  {
+    "id":32,
+    "image": "",
+    "title": "English 1st sem",
+    "year": "first",
+    "link": "https://drive.google.com/drive/folders/1H4TEUM4eN1DtzjfKtMm_YhUwQy7T1S4k"
+  },
+  {
+    "id":33,
+    "image": "",
+    "title": "Mechanical Engineering",
+    "year": "first",
+    "link": "https://drive.google.com/drive/folders/1afjyaA9IjOM48_xeGsaWuZY8ZUIkDmgl"
+  },
+  {
+    "id":34,
+    "image": "",
+    "title": "Electronics Engineering",
+    "year": "first",
+    "link": "https://drive.google.com/drive/folders/1aPzMKjkkIvoixWHoE7KiakZHA6tAV_DZ"
+  },
+  {
+    "id":34,
+    "image": "",
+    "title": "Physics",
+    "year": "first",
+    "link": "https://drive.google.com/drive/folders/1atfJNdYcC8vrEE9J3y46jz6Jwwhpzlk-"
+  },
+  {
+    "id":34,
+    "image": "",
+    "title": "Electrical Engineering",
+    "year": "first",
+    "link": "https://drive.google.com/drive/folders/1aN6D_MV51na4pLgp6IRMSj5V4Cddq6mn"
+  },
+  {
+    "id":34,
+    "image": "",
+    "title": "English 2nd sem",
+    "year": "first",
+    "link": "https://drive.google.com/drive/folders/1DvIrFuMUjtKi6nxWzhxlyz3QBZ4CA1Yk"
   }
 ]
