@@ -9,6 +9,7 @@ import { MdEmail } from "react-icons/md";
 import { AiOutlineNumber } from "react-icons/ai";
 import { RiLockPasswordFill } from "react-icons/ri";
 import "./Login.css";
+import Footer from "../Footer/Footer";
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -104,19 +105,13 @@ const Register = () => {
               </h6>
             </div>
 
-            <div className="remember-forgot">
-              <label>
-                <input type="checkbox" />
-                Remember Me
-              </label>
-              <a href="#">Forgot Password</a>
-            </div>
+            
             <button type="submit" className="btn">
               Register
             </button>
             <div className="register-link">
               <p>
-                have an account? <a href="#">Login</a>
+                have an account? <a href="/login">Login</a>
               </p>
             </div>
           </form>
