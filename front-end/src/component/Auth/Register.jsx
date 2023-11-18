@@ -20,7 +20,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`http://localhost:8000/user/signup`, {
+      const res = await axios.post(`http://localhost:8000/signup`, {
         name,
         email,
         roll,
@@ -105,7 +105,6 @@ const Register = () => {
               </h6>
             </div>
 
-            
             <button type="submit" className="btn">
               Register
             </button>
