@@ -10,13 +10,13 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <div style={{ width: "100%", height: "100vh" }}>
+      <div style={{ width: "100%", height: "90vh" }}>
         <img
           src="./../../../public/images/bg.webp"
           alt=""
           style={{
             width: "100%",
-            height: "80%",
+            height: "90%",
             position: "absolute",
             zIndex: "0",
           }}

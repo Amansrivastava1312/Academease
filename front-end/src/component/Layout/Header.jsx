@@ -33,7 +33,7 @@ const Header = () => {
         className=" navbar navbar-expand-lg"
         style={{
           width: "95%",
-          borderRadius: "100px",
+          borderRadius: "10px",
           // background: "white",
           // backdropFilter: blur(1000px),
         }}
@@ -55,20 +55,30 @@ const Header = () => {
               {" "}
               📓Academease
             </Link>
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav ms-auto gap-4 mb-2 mb-lg-0">
               <li className="nav-item">
-                <NavLink to={"/"} className="nav-link " aria-current="page">
+                <NavLink
+                  to={"/"}
+                  style={{ fontFamily: "monospace" }}
+                  className="nav-link "
+                  aria-current="page"
+                >
                   Home
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to={"/resourse"} className="nav-link ">
+                <NavLink
+                  to={"/resourse"}
+                  style={{ fontFamily: "monospace" }}
+                  className="nav-link "
+                >
                   Resources
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink
                   to={"/about"}
+                  style={{ fontFamily: "monospace" }}
                   className="nav-link "
                   aria-current="page"
                 >
@@ -80,6 +90,7 @@ const Header = () => {
                   <li className="nav-item">
                     <NavLink
                       to={"/register"}
+                      style={{ fontFamily: "monospace" }}
                       className="nav-link "
                       aria-current="page"
                     >
@@ -88,6 +99,7 @@ const Header = () => {
                   </li>
                   <li className="nav-item">
                     <NavLink
+                      style={{ fontFamily: "monospace" }}
                       to={"/login"}
                       className="nav-link "
                       aria-current="page"
@@ -102,6 +114,7 @@ const Header = () => {
                     <NavLink
                       onClick={handleLogout}
                       to={"/login"}
+                      style={{ fontFamily: "monospace" }}
                       className="nav-link "
                       aria-current="page"
                     >
