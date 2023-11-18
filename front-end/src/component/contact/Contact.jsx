@@ -8,7 +8,6 @@ const Contact = () => {
   return (
     <>
       <Header />
-
       <div className="contact_us_6">
         <div className="responsive-container-block container">
           <form className="form-box">
@@ -119,14 +118,15 @@ const Contact = () => {
               </div>
               <div className="map-box container-block">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.607578013484!2d77.5907495748252!3d27.6056934299688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736ce47bffc039%3A0xfe5fc3da92c6341!2sGLA%20University!5e0!3m2!1sen!2sin!4v1700216337227!5m2!1sen!2sin"
-                  width={600}
-                  height={450}
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.607731406603!2d77.5907495751151!3d27.605688676241073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736ce47bffc039%3A0xfe5fc3da92c6341!2sGLA%20University!5e0!3m2!1sen!2sin!4v1700207853389!5m2!1sen!2sin"
+                  width="610"
+                  height="510"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                />
+                  title="GLA University Map"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -159,6 +159,7 @@ const Contact = () => {
         </div>
       </div>
 
+      <h1></h1>
       <Footer />
     </>
   );
