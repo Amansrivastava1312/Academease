@@ -97,7 +97,13 @@ const Upload = () => {
               required
             />
             <br />
-            <button type="submit" className="btn btn-primary">
+            <button
+              type="submit"
+              style={{
+                padding: "7px 25px",
+                background: "skyblue",
+              }}
+            >
               Submit
             </button>
           </form>
@@ -139,7 +145,8 @@ const Upload = () => {
                           </CardText>
                           <Button
                             style={{
-                              padding: "5px 50px",
+                              height: "50%",
+                              padding: "px 5px",
                               marginTop: "12px",
                               backgroundColor: "#1eb2a6",
                             }}
@@ -166,7 +173,6 @@ const Upload = () => {
                 })}
           </div>
         </div>
-        <Footer style={{ width: "100%" }} />
       </div>
     </Layout>
   );
