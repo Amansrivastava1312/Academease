@@ -19,7 +19,7 @@ const Upload = () => {
   const [title, setTitle] = useState();
   const [author, setAuthor] = useState();
   const [file, setFile] = useState();
-  const [allImage, setAllImage] = useState(null);
+  const [allImage, setAllImage] = useState();
   useEffect(() => {
     getPdf();
   }, []);
@@ -29,7 +29,7 @@ const Upload = () => {
     setAllImage(result.data.data);
   };
   const showPdf = (pdf) => {
-    window.open(`http://localhost:8000/files/${pdf}`, "_blank", "noreferrer");
+    window.open(`http://localhost:8000/file/${pdf}`, "_blank", "noreferrer");
     // setPdfFile(`http://localhost:8080/files/${pdf}`);
   };
   const submitImage = async (e) => {
@@ -42,7 +42,11 @@ const Upload = () => {
     console.log(title, file);
     const result = await axios.post(
       "http://localhost:8000/upload-files",
-      formData
+      formData,
+      formData,
+      {
+        headers: { "Content-Type": "multipart/form-data" },
+      }
     );
     console.log(result);
     if (result.data.status == "ok") {

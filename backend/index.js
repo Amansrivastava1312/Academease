@@ -11,9 +11,9 @@ const app = express();
 const PORT = 8000;
 
 // common middleware
-app.use("/files", express.static("files"));
-app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use("/file", express.static("file"));
+app.use(express.urlencoded({ extended: false }));
 app.use(cookiePaser());
 app.use(cors());
 mongoDBConnection();
@@ -27,7 +27,7 @@ const mongoUrl = "mongodb://127.0.0.1:27017/miniProject";
 const multer = require("multer");
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "./files");
+    cb(null, "/Users/amansrivastava/Documents/Academease/backend/file");
   },
   filename: function (req, file, cb) {
     const uniqueSuffix = Date.now();
@@ -56,7 +56,7 @@ app.post("/upload-files", upload.single("file"), async (req, res) => {
 
 app.get("/get-files", async (req, res) => {
   try {
-    PdfSchema.find({}).then((data) => {
+    await PdfSchema.find({}).then((data) => {
       res.send({ status: "ok", data: data });
     });
   } catch (error) {}
