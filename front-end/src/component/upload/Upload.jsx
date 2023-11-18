@@ -42,12 +42,7 @@ const Upload = () => {
     console.log(title, file);
     const result = await axios.post(
       "http://localhost:8000/upload-files",
-      formData,
-      {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      }
+      formData
     );
     console.log(result);
     if (result.data.status == "ok") {
