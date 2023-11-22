@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
             display: "flex",
             flexDirection: "column",
             // lineHeight: "100%",
-            gap: "5px",
+            gap: "15px",
           }}
         >
           <h5 style={{ color: "white", fontWeight: "bolder" }}>

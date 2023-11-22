@@ -28,12 +28,9 @@ const Team = () => {
               </i>
             </div>
             <div className="details">
-              <img
-                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
-                alt
-              />
-              <strong>Emma Olivia</strong>
-              <p>Emmaolivia@gmail.com</p>
+              <img src="/images/Aman.jpeg" alt />
+              <strong>Srivastava Aman</strong>
+              <p>Full Stack</p>
             </div>
             <div className="btn">
               <a href="#">
@@ -71,8 +68,8 @@ const Team = () => {
                 src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
                 alt
               />
-              <strong>Sofia Adward</strong>
-              <p>Sofiaadward@gmail.com</p>
+              <strong>Yash Singhal</strong>
+              <p>Full Stack</p>
             </div>
             <div className="btn">
               <a href="#">
@@ -110,8 +107,8 @@ const Team = () => {
                 src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
                 alt
               />
-              <strong>Touseeq Ijaz</strong>
-              <p>Touseeqijaz@gmail.com</p>
+              <strong>Vipul Varshney</strong>
+              <p>FrontEnd & Design</p>
             </div>
             <div className="btn">
               <a href="#">
@@ -152,8 +149,8 @@ const Team = () => {
                 src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
                 alt
               />
-              <strong>Amelia Alex</strong>
-              <p>Ameliaalex@gmail.com</p>
+              <strong>Vidya Sagar Singh</strong>
+              <p>FrontEnd & Design</p>
             </div>
             <div className="btn">
               <a href="#">
