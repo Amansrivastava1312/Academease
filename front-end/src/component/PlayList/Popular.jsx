@@ -84,7 +84,13 @@ const Team = () => {
               target="_blank"
               href="https://youtu.be/WQoB2z67hvY?si=UAmXQqjeR_vRLTvV"
             >
-              <button style={{ padding: "20px", borderRadius: "10px" }}>
+              <button
+                style={{
+                  margin: "5% 25%",
+                  padding: "10px",
+                  borderRadius: "10px",
+                }}
+              >
                 Click here
               </button>
             </a>
@@ -113,7 +119,13 @@ const Team = () => {
             target="_blank"
             href="https://youtu.be/ohIAiuHMKMI?si=gsOifW2rgqfp5vKX"
           >
-            <button style={{ padding: "20px", borderRadius: "10px" }}>
+            <button
+              style={{
+                margin: "5% 25%",
+                padding: "10px",
+                borderRadius: "10px",
+              }}
+            >
               Click here
             </button>
           </a>
@@ -141,7 +153,13 @@ const Team = () => {
             target="_blank"
             href="https://youtu.be/k7ELO356Npo?si=eqAQu3mREb00TVpb"
           >
-            <button style={{ padding: "20px", borderRadius: "10px" }}>
+            <button
+              style={{
+                margin: "5% 25%",
+                padding: "10px",
+                borderRadius: "10px",
+              }}
+            >
               Click here
             </button>
           </a>
@@ -169,7 +187,13 @@ const Team = () => {
             target="_blank"
             href="https://youtu.be/ESnrn1kAD4E?si=tAEoln4oBlciDwEd"
           >
-            <button style={{ padding: "20px", borderRadius: "10px" }}>
+            <button
+              style={{
+                margin: "5% 25%",
+                padding: "10px",
+                borderRadius: "10px",
+              }}
+            >
               Click here
             </button>
           </a>
@@ -197,7 +221,13 @@ const Team = () => {
             target="_blank"
             href="https://youtu.be/WQoB2z67hvY?si=UAmXQqjeR_vRLTvV"
           >
-            <button style={{ padding: "20px", borderRadius: "10px" }}>
+            <button
+              style={{
+                margin: "5% 25%",
+                padding: "10px",
+                borderRadius: "10px",
+              }}
+            >
               Click here
             </button>
           </a>
@@ -225,7 +255,13 @@ const Team = () => {
             target="_blank"
             href="https://youtu.be/5hqLNHCq_l8?si=Egf9-gtD7vJsFPjh"
           >
-            <button style={{ padding: "20px", borderRadius: "10px" }}>
+            <button
+              style={{
+                margin: "5% 25%",
+                padding: "10px",
+                borderRadius: "10px",
+              }}
+            >
               Click here
             </button>
           </a>
