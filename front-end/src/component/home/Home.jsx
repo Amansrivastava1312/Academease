@@ -9,7 +9,64 @@ const Home = () => {
   const [auth, setAuth] = useAuth();
   return (
     <Layout>
-      <h1>Home Page</h1>
+      <div className="mainbox">
+        <div className="box1">
+          <img
+            src="https://scintillating-smakager-860376.netlify.app/images/about.webp"
+            alt
+          />
+        </div>
+        <div className="box2">
+          <div className="innerbox" id="innerbox1">
+            LEARN ANYTHING
+          </div>
+          <div className="innerbox" id="innerbox2">
+            Benefits About Online Learning Expertise
+          </div>
+          <div className="innerbox" id="innerbox3">
+            <div className="book">
+              <img src="/public/Resource-Management.jpeg" alt />
+            </div>
+            <div className="text1">
+              <h4>Online Courses</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                praesentium ad cumque, expedita placeat adipisci.
+              </p>
+            </div>
+          </div>
+          <div className="innerbox" id="innerbox4">
+            <div className="book">
+              <img
+                src=" https://img.icons8.com/dotty/80/000000/storytelling.png"
+                alt
+              />
+            </div>
+            <div className="text1">
+              <h4>Online Courses</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                praesentium ad cumque, expedita placeat adipisci.
+              </p>
+            </div>
+          </div>
+          <div className="innerbox" id="innerbox5">
+            <div className="book">
+              <img
+                src=" https://img.icons8.com/dotty/80/000000/storytelling.png"
+                alt
+              />
+            </div>
+            <div className="text1">
+              <h4>Online Courses</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                praesentium ad cumque, expedita placeat adipisci.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <Popular />
       <Faq />
 
